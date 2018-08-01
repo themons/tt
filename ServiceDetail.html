@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width,height=device-height, initial-scale = 1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<title>中小微型科技型企业网上服务平台</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font/fonts.css">
+	<link rel="stylesheet" href="css/index.css">
+
+
+	<script type="text/javascript" src="js/jquery/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="header">
+      <nav class="navbar" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="logo-link">
+              <img alt="logo" src="images/logo.png">
+            </a>
+          </div>
+          <div class="navbar-collapse collapse" id="example-navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首页</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                  资讯动态
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="industrialPolicy.html">产业政策</a></li>
+                  <li><a href="announcement.html">通知公告</a></li>
+                  <li><a href="news.html">新闻动态</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                  企业服务
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="financialServices.html">金融服务</a></li>
+                  <li><a href="taxationServices.html">财税服务</a></li>
+                  <li><a href="legalServices.html">法律服务</a></li>
+                  <li><a href="technologyServices.html">科技服务</a></li>
+                  <li><a href="otherServices.html">其它服务</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                  网上办公
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="siteApplication.html">场地申请</a></li>
+                  <li><a href="itemApplication.html">物品申请</a></li>
+                  <li><a href="businessSettled.html">企业入驻</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cooperation.html">招商合作</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">关于我们</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html">企业登录</a>
+              </li>
+              <li class="nav-item">
+                <a href="register.html">免费注册</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+       
+     <section class="main">
+         <div class="serviceDetail sub-module">
+            <div class="container">
+               <h3 class="sub-title"><i class="icon icon-financial2"></i>“好融通”中小微企业授信业务</h3>
+               <div class="col-lg-12 col-md-12 col-sm-12">
+                     <div id="financialServices-wrapper" class="dataTables_wrapper">
+                        <table id="financialServicesTable" role="grid" width="100%">
+                          <tbody>
+                                <tr class="odd" role="row">
+                                  <td width="14%">服务类别：</td>
+                                  <td width="20%">金融服务</td>
+                                  <td width="13%">服务小类：</td>
+                                  <td width="20%">银行</td>
+                                  <td width="13%">服务小类：</td>
+                                  <td width="20%">科技银行服务</td>
+                                </tr>
+                                <tr class="even" role="row">
+                                  <td>服务或产品名称：</td>
+                                  <td colspan="5">“好融通”中小微企业授信业务</td>
+                                </tr>
+                                <tr  class="odd" role="row">
+                                  <td>服务对象：</td>
+                                  <td colspan="5" class="font-size0">
+                                    <label><input type="checkbox" name="service_object" value="1" checked="checked">微型企业</label>
+                                    <label><input type="checkbox" name="service_object" value="2" checked="checked">小型企业</label>
+                                    <label><input type="checkbox" name="service_object" value="3" checked="checked">中型企业</label>
+                                    <label><input type="checkbox" name="service_object" value="4">大型企业</label>
+                                    <label><input type="checkbox" name="service_object" value="5">创业个人或团队</label>
+                                    <label><input type="checkbox" name="service_object" value="6">个体工商户</label> 
+                                    <label><input type="checkbox" name="service_object" value="7">事业单位</label>
+                                    <label><input type="checkbox" name="service_object" value="8">社会团体</label>
+                                    <label><input type="checkbox" name="service_object" value="9">其他</label>
+                                  </td>
+                                </tr>
+                                <tr class="even" role="row">
+                                  <td>服务方式：</td>
+                                  <td colspan="5" class="font-size0">
+                                      <label><input type="checkbox" name="service_mode" disabledvalue="1" checked="checked">柜台式服务</label>
+                                      <label><input type="checkbox" name="service_mode" disabledvalue="2" checked="checked">电话服务</label>
+                                      <label><input type="checkbox" name="service_mode" disabledvalue="3" checked="checked">上门服务</label>
+                                      <label><input type="checkbox" name="service_mode" disabledvalue="4">刊物、信函服务</label>
+                                      <label><input type="checkbox" name="service_mode" disabledvalue="5">网络服务</label>
+                                      <label><input type="checkbox" name="service_mode" disabledvalue="6">合同式服务</label>
+                                      <label><input type="checkbox" name="service_mode" disabledvalue="7">其他</label>
+                                </td>
+                              </tr>
+                              <tr class="odd" role="row">
+                                  <td>收费方式：</td>
+                                  <td colspan="5">贷款利率按照广发银行有关规定执行。</td>
+                              </tr>
+                              <tr class="even" role="row">
+                                  <td>服务或产品特色：</td>
+                                  <td colspan="5">企业可获得最高相当于抵押物评估价值140%的融资额度；审批效率高，最快3天可完成授信审批。</td>
+                              </tr>
+                              <tr class="odd" role="row">
+                                  <td>服务产品介绍：</td>
+                                  <td colspan="5" style="min-height: 200px">
+                                      <div id="intro">
+                                          <p>
+                                            <span>
+                                              <span><strong>产品名称：</strong>广发银行“好融通”融资产品</span></span>
+                                          </p>
+
+                                          <p>
+                                            <span>
+                                              <span><strong>融资对象：</strong>为销售收入为3.9亿元亿元以下的中小企业</span></span>
+                                          </p>
+
+                                          <p>
+                                            <span>
+                                              <span><strong>融资额度：</strong>6000万元</span></span>
+                                          </p>
+
+                                          <p>
+                                            <span>
+                                              <span><strong>融资方式：</strong>抵押、质押、担保及信用</span></span>
+                                          </p>
+
+                                          <p>
+                                            <span>
+                                              <span><strong>资金用途：</strong>日常流动资金周转、购买机器设备、厂房建设及物业购置等</span></span>
+                                          </p>
+
+                                          <p>
+                                            <span>
+                                              <strong><span>产品简介及优势：</span></strong></span>
+                                          </p>
+
+                                          <p>
+                                            <span>“好融通”融资产品是广发银行专为销售收入不超过3.9亿元的中小企业量身打造的标准化融资产品。</span>
+                                          </p>
+
+                                          <p>
+                                            <span>单个企业融资额度：可授予企业高达3000万元人民币的信用贷款额度；总融资额度高达6000万元人民币。</span>
+                                          </p>
+
+                                          <p>
+                                            <span>产品特点：企业可获得最高相当于抵押物评估价值140%的融资额度；审批效率高，最快3天可完成授信审批。</span>
+                                          </p>
+
+                                          <span>融资成本：基准利率上浮10-30%。</span>
+                                          <p>
+                                            <span>
+                                              <span>担保方式：除接受房地产抵押、融资性担保公司担保及第三方企业担保外，还可接受动产、仓单、提单、应收账款质押等多种担保方式。<br></span>
+                                            </span>
+                                          </p>
+
+                                          <p>
+                                            <span><strong><span>成功案例展示：</span></strong></span>
+                                          </p>
+
+                                          <p>
+                                            <span><span>企业基本介绍：企业B成立于2008年，为有限责任公司，主要从事印刷制品、包装装潢等产品生产，实现年销售收入约3亿元，企业拥有标准机器设备及工业厂房，房地产价值约5500万元，合作客户均为国内知名企业。</span></span>
+                                          </p>
+
+                                          <p>
+                                            <span><span>产品方案应用：</span></span></p>
+
+                                          <p>
+                                            <span><span>企业融资优势：该企业拥有优秀管理团队，拥有先进的机器设备及自有工业厂房，合作客户均为国内知名企业，企业发展前景好。</span></span>
+                                          </p>
+
+                                          <p>
+                                            <span><span>企业融资缺陷：属于传统行业，无自主专利发明。</span></span>
+                                          </p>
+
+                                          <p>
+                                            <span><span>最后融资方案：给予B企业核定5000万元授信额度，有效期一年，用其自身名下工业厂房作抵押，抵押率91%，采用流动资金贷款及银承汇票方式发放。</span></span>
+                                          </p>
+
+                                          <p>
+                                            <span><span><span>广发银行茂名仲恺科技园支行 &nbsp; 联系人：甘荟园 &nbsp; 13532101777</span></span></span>
+                                          </p>
+
+                                          <div><span><span><span><br></span></span></span></div>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="even" role="row">
+                                <td>服务区域：</td>
+                                <td colspan="5">茂名市</td>
+                              </tr>
+                          </tbody>
+                        </table>
+                     </div>
+               </div>
+            </div>
+         </div>   
+     </section>
+     
+     <footer class="footer">
+            <div class="container">
+                   <div class="col-lg-6 col-md-6 col-sm-6">
+                          <a href="http://www.miitbeian.gov.cn" target="_blank">Copyright © 2017-2018 备案号：粤ICP备17043268号-1</a>
+                   </div>
+                   <div class="col-lg-6 col-md-6 col-sm-6">
+                          <a href="javascript:;">茂名市中小微科技型企业网上服务平台</a>
+                   </div>
+            </div> 
+     </footer>
+</body>
+</html>

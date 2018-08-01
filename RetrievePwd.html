@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width,height=device-height, initial-scale = 1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<title>修改密码</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font/fonts.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/webUploader/webuploader.css">
+	<link rel="stylesheet" href="css/login.css">
+
+	<script type="text/javascript" src="js/jquery/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/webUploader/webuploader.js"></script>
+</head>
+<body>
+
+	<header class="login-header register-header">
+		<div class="container">
+			<a href="index.html">
+				<img src="images/logo.png" alt="logo">
+				<span>茂名中小微科技型企业网上服务平台</span>
+			</a>
+		</div>		
+	</header>
+
+	<section class="register-content">
+		<div class="register-box">
+			<div class="title">
+				<span>找回密码</span>
+				<a href="login.html">已有帐号，现在登录></a>
+			</div>
+			<div class="list">
+				<!-- <form id="regform" action="" method="post"> -->
+				<div id="retrievePwd">
+					<div class="line">
+						<label for="contactMail">联系人邮箱</label>
+						<input type="text" name="contactMail" id="contactMail" value="请输入联系人邮箱" onfocus="if(value=='请输入联系人邮箱') {this.style.color='#000';value=''}" onblur="if(value=='') {this.style.color='#ccc';value='请输入联系人邮箱'}" />
+					</div>
+					<div class="line">
+						<label for="code">验证码</label>
+						<input type="text" name="code" id="code" value="验证码" onfocus="if(value=='验证码') {this.style.color='#000';value=''}" onblur="if(value=='') {this.style.color='#ccc';value='验证码'}">
+						<img class="img-code" src="http://www.zhcxxy.com/zh/f6imagecode/675u64zdFVZ7189T/20/85/32/121" alt="" onclick="changeCode()">
+						<span class="btn-changecode" onclick="changeCode()">看不清? <a href="javascript:;">换一个</a></span>
+					</div>				
+					<div class="line">
+						<input type="button" class="btn-send" id="btn-send" value="发送验证邮件">
+					</div>
+				</div>
+				<!-- </form> -->
+			</div>
+		</div>
+	</section>
+
+	<footer class="login-footer">
+		<p>茂名中小微科技型企业网上服务平台版权所有 Copyright 2017</p>
+	</footer>
+
+	<script type="text/javascript">
+		$(function() {
+			changeCode();
+		});
+
+		function changeCode() {
+			var random = Math.random();
+			var src = "http://www.zhcxxy.com/zh/f6imagecode/675u64zdFVZ7189T/20/85/32/" + random;
+			$("#retrievePwd .img-code").attr("src",src);
+		}
+	</script>
+</body>
+</html>

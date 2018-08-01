@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width,height=device-height, initial-scale = 1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<title>会员登录</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font/fonts.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login.css">
+
+	<script type="text/javascript" src="js/jquery/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<header class="login-header">
+		<div class="container">
+			<a href="index.html">
+				<img src="images/logo.png" alt="logo">
+				<span>茂名中小微科技型企业网上服务平台</span>
+			</a>
+		</div>		
+	</header>	
+
+	<section class="login-content">
+		<div class="container clearfix">
+			<div class="login-box">
+				<h4 class="clearfix">用户登录
+					<a href="register.html" class="btn-register">免费注册</a>
+					<a href="retrievepwd.html" class="btn-forgetPwd">忘记密码?</a>
+				</h4>
+
+				<div class="line">
+					<span class="icon icon-user"></span>
+					<input type="text" placeholder="请输入账号" name="userName" id="username" value="">
+					<!-- <span class="warning">账号不能为空</span> -->
+				</div>
+				<div class="line">
+					<span class="icon icon-password"></span>
+					<input type="password" placeholder="请输入密码" name="password" id="password" value="">
+					<!-- <span class="warning">密码不能为空</span> -->
+				</div>
+				<div class="line">
+					<span class="icon icon-code"></span>
+					<input type="text" name="code" id="code" placeholder="验证码">
+					<img class="img-code" src="http://www.zhcxxy.com/zh/f6imagecode/675u64zdFVZ7189T/20/85/32/121" alt="" onclick="changeCode()">
+					<a href="javascript:;" class="btn-changecode" onclick="changeCode()">换一个</a>
+				</div>
+				<div class="line">
+					<a href="javascript:;" class="btn-login">立即登录</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="login-footer">
+		<p>茂名中小微科技型企业网上服务平台版权所有 Copyright 2017</p>
+	</footer>
+
+	<script type="text/javascript">
+		$(function() {
+			changeCode();
+		});
+
+		function changeCode() {
+			var random = Math.random();
+			var src = "http://www.zhcxxy.com/zh/f6imagecode/675u64zdFVZ7189T/20/85/32/" + random;
+			$(".login-box .img-code").attr("src",src);
+		}
+	</script>
+</body>
+</html>

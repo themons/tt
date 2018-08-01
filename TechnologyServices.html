@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width,height=device-height, initial-scale = 1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <title>科技服务</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/datatable/jquery.dataTables.css">
+  <link rel="stylesheet" href="css/datatable/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="css/font/fonts.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script type="text/javascript" src="js/jquery/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/datatable/jquery.dataTables.min.js"></script>
+</head>
+<body>
+  <header class="header">
+      <nav class="navbar" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="logo-link">
+              <img alt="logo" src="images/logo.png">
+            </a>
+          </div>
+          <div class="navbar-collapse collapse" id="example-navbar-collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首页</a>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                  资讯动态
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="industrialPolicy.html">产业政策</a></li>
+                  <li><a href="announcement.html">通知公告</a></li>
+                  <li><a href="news.html">新闻动态</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                  企业服务
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="financialServices.html">金融服务</a></li>
+                  <li><a href="taxationServices.html">财税服务</a></li>
+                  <li><a href="legalServices.html">法律服务</a></li>
+                  <li><a href="technologyServices.html">科技服务</a></li>
+                  <li><a href="otherServices.html">其它服务</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                  网上办公
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="siteApplication.html">场地申请</a></li>
+                  <li><a href="itemApplication.html">物品申请</a></li>
+                  <li><a href="businessSettled.html">企业入驻</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cooperation.html">招商合作</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">关于我们</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html">企业登录</a>
+              </li>
+              <li class="nav-item">
+                <a href="register.html">免费注册</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+  <section class="main">
+    <div class="technology sub-module">
+      <div class="container">
+        <h3 class="clearfix sub-title"><i class="icon icon-technology2"></i>科技服务</h3>
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="service-title clearfix">
+            <div class="service-left col-lg-8 col-md-8 col-sm-12">
+              <div class="service-type clearfix">
+                <dt>科技服务: </dt>
+                <dd class="cur">企业资质及平台认定辅导</dd>
+                <dd>项目扶持</dd>
+                <dd>专利申请</dd>
+                <dd>成果认定</dd>
+                <dd>政策咨询</dd>
+                <dd>税务法律等其它服务</dd>
+              </div>
+              <div class="sub-service-type clearfix">
+                <dt>企业资质及平台认定辅导分类：</dt>
+                <dd class="cur">国家高新技术企业认定辅导</dd>
+                <dd>重点实验室</dd>
+                <dd>技术中心认定辅导</dd>
+                <dd>工程中心认定辅导</dd>
+                <dd>“双软”认定辅导</dd>
+                <dd>高新技术产品认定辅导</dd>
+                <dd>孵化器、加速器认定辅导</dd>
+                <dd>中小企业公共服务平台认定辅导</dd>
+                <dd>中小企业公共服务平台认定辅导</dd>
+              </div>
+            </div>
+            <div class="service-right col-lg-4 col-md-4 col-sm-12">
+              <span class="search-banner">
+                <i class="icon icon-search"></i>
+                <input type="text" placeholder="请输入关键字搜索">
+              </span>
+              <a class="btn-search" href="javascript:;" onclick="technologySearch()">搜索</a>
+            </div>
+          </div>
+          <div id="technology-wrapper" class="service-content dataTables_wrapper">
+            <table class="display dataTable" id="technologyTable" role="grid" width="100%" aria-describedby="technologyTable-info">
+              <thead>
+                <tr role="row">
+                  <th tabindex="0" aria-controls="technologyTable" rowspan="1" colspan="1">类型</th>   
+                  <th tabindex="0" aria-controls="technologyTable" rowspan="1" colspan="1">名称</th>             
+                  <th tabindex="0" aria-controls="technologyTable" rowspan="1" colspan="1">简介</th>
+                  <th tabindex="0" aria-controls="technologyTable" rowspan="1" colspan="1">收费方式</th> 
+                  <th tabindex="0" aria-controls="technologyTable" rowspan="1" colspan="1">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="odd" role="row">
+                  <td>科技服务</td>
+                  <td>
+                    <a href="javascript:;" target="_blank">国家高新技术企业认定</a>
+                  </td>
+                  <td class="description" title="国家高新技术企业认定">国家高新技术企业认定</td>
+                  <td class="charge">面议</td>
+                  <td><a href="javascript:;" class="btn btn-primary">立即申请</a></td>
+                </tr>
+                <tr class="even" role="row">
+                  <td>科技服务</td>
+                  <td>
+                    <a href="javascript:;" target="_blank">审计</a>
+                  </td>
+                  <td class="description" title="上市审计、年度审计、专项审计（离任审计、经济责任审计、清算审计、经费支出审计、年检审计、高新技术企业认定审计、项目竣工决算财务审计清产核资审计、经营绩效审计、其他特殊目的的专项审计）">上市审计、年度审计、专项审计（离任审计、经济责任审计、清算审计、经费支出审计、年检审计、高新技术企业认定审计、项目竣工决算财务审计清产核资审计、经营绩效审计、其他特殊目的的专项审计）</td>
+                  <td class="charge">出报告收款</td>
+                  <td><a href="javascript:;" class="btn btn-primary">立即申请</a></td>
+                </tr>
+                <tr class="odd" role="row">
+                  <td>科技服务</td>
+                  <td>
+                    <a href="javascript:;" target="_blank">目标达成系统</a>
+                  </td>
+                  <td class="description" title="帮助企业的业绩提高50%以上">帮助企业的业绩提高50%以上</td>
+                  <td class="charge" title="6000~1000000">6000~1000000</td>
+                  <td><a href="javascript:;" class="btn btn-primary">立即申请</a></td>
+                </tr>
+                <tr class="even" role="row">
+                  <td>科技服务</td>
+                  <td>
+                    <a href="javascript:;" target="_blank">高新技术企业认定/复审/重新认定辅导服务</a>
+                  </td>
+                  <td class="description" title="我们根据与《企业所得税法》配套的高新相关文件：由科技部、财政部、国家税务总局联合发布的《高新技术企业认定管理工作指引》及《高新技术认定管理办法》、《国家重点支持的高新技术领域》为贵公司量身定制一套2016年高新技术企业认定/复审/重新认定服务方案,在合法合理的前提下降低企业整体税负,同时充分运用各项科技优惠政策及国家扶持政策，争取获得更多的政府补贴资金以实现企业价值最大化。">我们根据与《企业所得税法》配套的高新相关文件：由科技部、财政部、国家税务总局联合发布的《高新技术企业认定管理工作指引》及《高新技术认定管理办法》、《国家重点支持的高新技术领域》为贵公司量身定制一套2016年高新技术企业认定/复审/重新认定服务方案,在合法合理的前提下降低企业整体税负,同时充分运用各项科技优惠政策及国家扶持政策，争取获得更多的政府补贴资金以实现企业价值最大化。</td>
+                  <td class="charge">面议</td>
+                  <td><a href="javascript:;" class="btn btn-primary">立即申请</a></td>
+                </tr> 
+              </tbody>
+            </table>
+            <div id="technologyTable-info" class="dataTables_info" role="status" aria-live="polite">显示第 1 至 20 项结果，共 40 项</div>
+            <div class="dataTables_paginate paging_simple-numbers" id="technologyTable_paginate">
+              <a href="paginate_button previous disabled" aria-controls="technologyTable" data-dt-idx="0" tabindex="0" id="technologyTable-prev">上一页</a>
+              <span>
+                <a class="paginate_button current" aria-controls="technologyTable" data-dt-idx="1" tabindex="0">1</a>
+                <a class="paginate_button" aria-controls="technologyTable" data-dt-idx="2" tabindex="0">2</a>
+                <a class="paginate_button" aria-controls="technologyTable" data-dt-idx="3" tabindex="0">3</a>
+              </span>
+              
+              <a href="paginate_button next" aria-controls="technologyTable" data-dt-idx="4" tabindex="0" id="technologyTable-next">下一页</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <a href="http://www.miitbeian.gov.cn" target="_blank">Copyright © 2017-2018 备案号：粤ICP备17043268号-1</a>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <a href="javascript:;">茂名市中小微科技型企业网上服务平台</a>
+      </div>
+    </div>  
+  </footer>
+</body>
